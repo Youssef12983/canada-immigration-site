@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canada Immigration Consultancy</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Canada Immigration">
+        <span class="leaf">🍁</span>
+        <span class="brand-text">Canada Immigration</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home">Accueil</a>
+        <a href="#services">Nos services</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Petit bouton Connexion -->
+      <button class="login-btn" type="button" id="loginOpen" aria-label="Connexion" title="Connexion">
+        👤 <span class="login-text">Connexion</span>
+      </button>
+
+      <a class="btn btn-primary nav-cta" href="#contact">Réserver une consultation</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Votre rêve d’immigrer au Canada commence ici</h1>
+        <p>
+          Nous vous proposons des consultations spécialisées et un accompagnement pas à pas
+          pour les démarches d’études, de travail, de regroupement familial et de résidence permanente.
+          Notre équipe vous aide à choisir le meilleur programme selon votre situation.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Réserver maintenant</a>
+          <a class="btn btn-outline" href="#services">Découvrir nos services</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">✅ Suivi de votre dossier</div>
+          <div class="badge">✅ Expertise des programmes Canada</div>
+          <div class="badge">✅ Support rapide</div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card">
+          <h3>Consultation rapide</h3>
+          <p>Laissez-nous vos informations et nous vous contacterons rapidement.</p>
+
+          <form id="quickForm">
+            <label>
+              Nom complet
+              <input type="text" name="name" placeholder="Ex: Sliman" required />
+            </label>
+
+            <label>
+              Téléphone / WhatsApp
+              <input type="tel" name="phone" placeholder="+31 ..." required />
+            </label>
+
+            <button class="btn btn-primary w-full" type="submit">Envoyer</button>
+            <p class="form-note" id="quickMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Nos services</h2>
+        <p>Choisissez le service dont vous avez besoin, nous vous guidons vers les bonnes étapes.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="service">
+          <h3>Conseils pour les études</h3>
+          <p>Choix de l’établissement, admission, et préparation du dossier de visa étudiant.</p>
+        </article>
+
+        <article class="service">
+          <h3>Conseils pour le travail</h3>
+          <p>Orientation vers les programmes adaptés, CV, et plan de candidature.</p>
+        </article>
+
+        <article class="service">
+          <h3>Conseils familiaux</h3>
+          <p>Regroupement familial, visas de visite, et évaluation de la situation familiale.</p>
+        </article>
+
+        <article class="service">
+          <h3>Résidence permanente</h3>
+          <p>Express Entry et programmes des provinces (PNP) selon votre profil.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div>
+        <h2>À propos de nous</h2>
+        <p>
+          Nous sommes une société spécialisée en immigration vers le Canada. Notre objectif est de simplifier
+          les démarches et de fournir un plan clair, en respectant les délais et en assurant un suivi régulier
+          afin de renforcer votre dossier.
+        </p>
+
+        <ul class="about-list">
+          <li>✔ Un plan clair, étape par étape</li>
+          <li>✔ Suivi rigoureux des documents et des délais</li>
+          <li>✔ Aide à la préparation et à la communication</li>
+        </ul>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">+500</div>
+          <div class="stat-label">consultations/an</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">années d’expérience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">satisfaction client</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">support par messages</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Vous avez des questions ? Laissez vos informations et nous vous répondrons au plus vite.</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="row">
+            <label>
+              Nom
+              <input type="text" name="name" placeholder="Votre nom complet" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@email.com" required />
+            </label>
+          </div>
+
+          <label>
+            Téléphone / WhatsApp
+            <input type="tel" name="phone" placeholder="+212..." required />
+          </label>
+
+          <label>
+            Sujet
+            <input type="text" name="subject" placeholder="Ex: Consultation études" required />
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Envoyer le message</button>
+          <p class="form-note" id="contactMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <div class="info-card">
+          <h3>Coordonnées</h3>
+          <p><strong>Téléphone :</strong> +4384355657</p>
+          <p><strong>Email :</strong> youssefelwazzani080@gmail.com</p>
+          <p><strong>Adresse :</strong> Montréal</p>
+
+          <div class="info-actions">
+            <a class="btn btn-outline w-full" href="#home">Retour en haut</a>
+            <a class="btn btn-primary w-full" href="#services">Voir les services</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="leaf">🍁</span>
+          <span>Canada Immigration</span>
+        </div>
+        <p class="muted">
+          Conseil et accompagnement pour l’immigration au Canada. Notre objectif : faciliter votre parcours
+          et renforcer votre dossier.
+        </p>
+      </div>
+
+      <div>
+        <h4>Liens rapides</h4>
+        <div class="footer-links">
+          <a href="#home">Accueil</a>
+          <a href="#services">Nos services</a>
+          <a href="#about">À propos</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Horaires</h4>
+        <p class="muted">Lundi - Vendredi : 09:00 - 18:00</p>
+        <p class="muted">Samedi : 10:00 - 14:00</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">© <span id="year"></span> Canada Immigration. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- LOGIN MODAL (fixed, no scroll to #login) -->
+  <div class="login-modal" id="loginModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="login-modal__overlay" id="loginOverlay"></div>
+
+    <div class="login-modal__panel" role="document">
+      <div class="login-modal__head">
+        <h3 id="loginTitle">Connexion</h3>
+        <button type="button" class="login-close" id="loginClose" aria-label="Fermer">✕</button>
+      </div>
+
+      <!-- LOGIN -->
+      <form id="loginForm">
+        <p class="login-sub">Connectez-vous pour suivre la progression de votre dossier.</p>
+
+        <label>
+          Email
+          <input type="email" name="login_email" placeholder="name@email.com" required>
+        </label>
+
+        <label>
+          Mot de passe
+          <input type="password" name="login_password" placeholder="••••••••" required>
+        </label>
+
+        <button class="btn btn-primary w-full" type="submit">Se connecter</button>
+
+        <button class="btn btn-outline w-full" type="button" id="showRegister" style="margin-top:.7rem;">
+          Créer un compte
+        </button>
+
+        <p class="form-note" id="loginMsg" role="status" aria-live="polite"></p>
+      </form>
+
+      <!-- REGISTER -->
+      <form id="registerForm" style="display:none;">
+        <p class="login-sub">Créez un compte pour accéder à votre espace.</p>
+
+        <label>
+          Nom complet
+          <input type="text" name="reg_name" placeholder="Votre nom" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="reg_email" placeholder="name@email.com" required>
+        </label>
+
+        <label>
+          Mot de passe
+          <input type="password" name="reg_password" placeholder="••••••••" required>
+        </label>
+
+        <button class="btn btn-primary w-full" type="submit">Créer le compte</button>
+
+        <button class="btn btn-outline w-full" type="button" id="showLogin" style="margin-top:.7rem;">
+          Retour à la connexion
+        </button>
+
+        <p class="form-note" id="registerMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/main.js"></script>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>

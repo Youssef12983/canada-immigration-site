@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon dossier - Canada Immigration</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html#home" aria-label="Canada Immigration">
+        <span class="leaf">🍁</span>
+        <span class="brand-text">Canada Immigration</span>
+      </a>
+
+      <div style="display:flex; gap:.6rem; align-items:center;">
+        <a class="btn btn-outline" href="index.html#contact">Contact</a>
+        <button class="btn btn-primary" id="logoutBtn" type="button">Déconnexion</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 style="color:var(--blue); margin-top:0;">Suivi de votre dossier</h2>
+      <p id="welcomeText" class="muted">Chargement...</p>
+
+      <div class="card" style="margin-top:1rem;">
+        <h3 style="margin-top:0; color:var(--blue);">Progression</h3>
+
+        <div id="stepsBox" style="display:grid; gap:.6rem;"></div>
+
+        <hr style="border:none;border-top:1px solid #eee; margin:1rem 0;">
+
+        <h4 style="margin:.2rem 0; color:var(--blue);">Statut</h4>
+        <p id="statusText" class="muted">—</p>
+
+        <h4 style="margin:.2rem 0; color:var(--blue);">Note</h4>
+        <p id="noteText" class="muted">—</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
